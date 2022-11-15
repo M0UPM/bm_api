@@ -10,7 +10,7 @@ num='^[0-9]+$'
 #
 # On to questions and dealing with the answers
 #
-echo -e "Please choose one of the following options\n\n1. list supscritions\n2. Add static talkgroup\n3. Delete static talk group\n4. Drop current call from slot"
+echo -e "Please choose one of the following options\n\n1. list subscriptions\n2. Add static talk group\n3. Delete static talk group\n4. Drop current call from slot"
 read -r option
 if ! [[ ${option} =~ ${num} ]]; then                                       #check its a number, if not bail
 echo "Option selected must be a number......Exiting" >&2; exit 1
