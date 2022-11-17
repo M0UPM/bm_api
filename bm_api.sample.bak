@@ -24,9 +24,6 @@ fi
 if [[ ${keyanswer} == "no" ]]; then
 echo -e "Please create key file at /opt/bm_api/bm_key" >&2; exit 1
 fi
-if [[ $(wc -c ${bm_key} | awk '{print $1}') -lt 200 ]]; then               #check we're using a v2 key, if not bail
-echo -e "Non V2 key detected, please update your key" >&2; exit 1
-fi
 
 #
 # Set some variables
